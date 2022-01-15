@@ -6,10 +6,11 @@ import Input from './Input';
 
 const styles = StyleSheet.create({
     continer: {
+        writingDirection:'ltr',
         display: 'flex',
         flexDirection: 'column',
-        alignItems:'center'
-        
+        alignItems:'flex-start',
+        padding:'5%'
     },
     text: {
         fontSize: 50,
@@ -34,13 +35,14 @@ export default function AddNote({navigation}) {
         <View style={styles.continer}>
             <Text style={styles.text}>Add Note</Text>
             <Input
-                text={"Title"}
+                text={"Title   "}
                 getText={setTitle}
             />
             <Input
                 text={"Detail"}
                 getText={setDetail}
             />
+        
             <TouchableOpacity onPress={()=>{navigation.navigate('ListNotes',{Note:{title: title, detial: detail}})}} style={styles.button}>
                 <Text  style={{fontSize:30,textAlign:'center'}}>+</Text>
             </TouchableOpacity>

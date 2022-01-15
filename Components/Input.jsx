@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         color: '#000',
         borderBottomWidth: 1,
         borderBottomColor: '#555',
-        width: '100%',
+        width: '100%',    
     },
     text: {
         fontSize: 25,
@@ -30,7 +30,7 @@ const{text,getText}=props
 
     return (
         <View style={styles.continer}>
-            <Text style={styles.text}>{text}:</Text>
+            <Text style={styles.text}>{text}</Text>
             <TextInput style={styles.input}
             onChangeText={getText} />
         </View>

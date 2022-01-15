@@ -3,14 +3,14 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const styles = StyleSheet.create({
     page:{
-        direction:'ltr',
+        writingDirection:'ltr',
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
     },
     border: {
-        direction:'ltr',
+        writingDirection:'ltr',
         borderWidth: 3,
         borderColor: "black",
         width: '99%',
@@ -20,12 +20,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     continer: {
-        direction:'ltr',
+        writingDirection:'ltr',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'flex-start',
-        // alignItems:'flex-start',
-        // alignContent:'flex-start',
         width: '95%',
         borderWidth: 1,
         borderColor: "thistle",
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
         marginBottom:'2%'
     },
     text: {
-        direction:'ltr',
+        writingDirection:'ltr',
         fontSize: 16,
         textAlign:'left',
         alignSelf:'flex-start',
@@ -41,7 +39,7 @@ const styles = StyleSheet.create({
         paddingRight:'5%'
     },
     header: {
-        direction:'ltr',
+        writingDirection:'ltr',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-around',
@@ -49,12 +47,12 @@ const styles = StyleSheet.create({
         marginBottom: '3%'
     },
     headerText: {
-        direction:'ltr',
+        writingDirection:'ltr',
         fontSize: 20,
         fontWeight: 'bold',
     },
     button:{
-        direction:'ltr',
+        writingDirection:'ltr',
         marginTop:'5%',
         alignSelf: 'center',
         width: '50%',
